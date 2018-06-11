@@ -3,8 +3,6 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.c \
-    variableNames.c
+SOURCES += main.c
 
-HEADERS += \
-    variablenames.h
+HEADERS +=

@@ -1,6 +1,7 @@
 //gcc -o main.tst -x c main.c
 //Una nota importante, este programa requiere que todos los archivos de entrada posean una línea vacía al final del archivo
 
+//primero las librerías estándar
 #include <stdio.h>//librería de entrada/salida
 #include <stdlib.h>//librería de estándar de C
 #include <string.h>//necesito poder manejar strings arbitrariamente
@@ -35,9 +36,14 @@ int main(int argc, char *argv[])
             strcat(informacionArchivo, lineaLeida);
             //printf("%s\n",informacionArchivo);//veamos qué conseguí
         }
-        printf("%s",informacionArchivo);//veamos qué conseguí
+        //printf("%s",informacionArchivo);//veamos qué conseguí
         fclose(handleArchivo);//tengo que cerrarlo, ya terminé de leerlo
         //ahora el análisis
+        int cantidadErroresNombresVariables = 0;
+        for(int elementoBlackList = 0;elementoBlackList < 10;elementoBlackList++){
+
+        }
+
 
         //todo finalizado, liberando
         free(informacionArchivo);
